@@ -38,4 +38,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: dist/
+          BRANCH: gh-pages
