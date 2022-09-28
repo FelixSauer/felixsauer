@@ -1,10 +1,5 @@
 name: GitHub CI for felixsauer.dev
 
-defaults:
-  run:
-    shell: bash
-    working-directory: fe
-
 on:
   push:
     branches: [ "master" ]
