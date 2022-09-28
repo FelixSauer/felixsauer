@@ -1,5 +1,9 @@
 name: GitHub CI for felixsauer.dev
 
+defaults:
+  run:
+    working-directory: fe
+
 on:
   push:
     branches: [ "master" ]
@@ -8,7 +12,6 @@ jobs:
   test:
     name: test
     runs-on: ubuntu-latest
-    working-directory: fe
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -23,7 +26,6 @@ jobs:
   build:
     name: build
     runs-on: ubuntu-latest
-    working-directory: fe
     needs: test
     steps:
       - name: Build
