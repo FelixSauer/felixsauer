@@ -1,16 +1,16 @@
-name: GitHub CI for felixsauer.dev
+name: CI Deployment Pipeline
 
 defaults:
   run:
-    working-directory: fe
+    working-directory: fe/apps
 
 on:
   push:
     branches: [ "master" ]
 
 jobs:
-  test:
-    name: test
+  preparation:
+    name: Preparation
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -21,15 +21,22 @@ jobs:
           node-version: '16.x'
       - name: Install dependencies
         run: npm i
+      - name: pwd
+        run: pwd
+  test:
+    name: Test
+    needs: preparation
+    runs-on: ubuntu-latest
+    steps:
       - name: Test
         run: npm run test
   build:
-    name: build
+    name: Build
     runs-on: ubuntu-latest
     needs: test
     steps:
       - name: Build
-        run: cd apps/fe && npm run build
+        run: npm run build
       - name: Archive build
         if: success()
         uses: actions/upload-artifact@v1
