@@ -23,6 +23,7 @@ jobs:
         run: npm i
       - name: pwd
         run: pwd
+        ls
   test:
     name: Test
     needs: preparation
