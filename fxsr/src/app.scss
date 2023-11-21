@@ -1,0 +1,221 @@
+@font-face {
+	font-family: 'Bebas';
+	src: url('./lib/assets/fonts/BebasNeue-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('./lib/assets/fonts/Lato-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Latolight';
+	src: url('./lib/assets/fonts/Lato-light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'LatolightItalic';
+	src: url('./lib/assets/fonts/Lato-LightItalic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html[theme='dark-mode'] {
+	filter: invert(1) hue-rotate(180deg);
+}
+// Colors
+$color_yellow: #e5c07b;
+$color_red: #e06c75;
+$color_blue: #56b6c2;
+$color_white: #ffffff;
+$color_gray: #abb2bf;
+$color_dark_gray: #7d8799;
+$color_light_blue: #61afef;
+$color_green: #98c379;
+$color_brown: #d19a66;
+$color_purple: #c678dd;
+$color_dark_black: #21252b;
+$color_dark_gray: #2c313a;
+$color_black: #282c34;
+$color_dark_blue: #353a42;
+$color_dark_selection: #3e4451;
+$color_light_cursor: #528bff;
+$selection: #3e4451;
+
+$primary: $color_light_cursor;
+$secondary: $color_red;
+
+html {
+	width: 100vw;
+	height: 100vh;
+	font-size: 16px;
+	font-family: 'Latolight', sans-serif;
+	background-color: $color_dark_black;
+	color: $color_white;
+
+	::-webkit-scrollbar {
+		height: 100%;
+		width: 0.5rem;
+		border-radius: 6px;
+		border: 1px solid rgba(255, 255, 255, 0.25);
+	}
+
+	::-webkit-scrollbar-track {
+		height: 100%;
+		border-radius: 4px;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: rgba(255, 255, 255, 0.75);
+		border: 1px solid rgba(255, 255, 255, 0.75);
+		border-radius: 6px;
+		height: 100px;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Bebas, sans-serif;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.75rem;
+}
+
+h4 {
+	font-size: 1.5rem;
+}
+
+h5 {
+	font-size: 1rem;
+}
+
+h6 {
+	font-size: 0.5rem;
+}
+
+.layout {
+	height: 100vh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	grid-gap: 0.75rem;
+}
+
+header {
+	grid-row: 1;
+	display: flex;
+	justify-content: flex-end;
+	justify-content: space-between;
+	padding: 0.75rem 0.75rem 1.25rem 0.75rem;
+}
+
+main {
+	grid-row: 2;
+	padding: 0 0.75rem;
+	margin: 0.75rem 0;
+	height: 100%;
+	position: sticky;
+	overflow-y: auto;
+	margin-right: 0.75rem;
+
+	section {
+		height: 100%;
+		display: grid;
+		grid-template-rows: repeat(5, 1fr);
+		grid-template-columns: repeat(5, 1fr);
+
+		article {
+			grid-column: 1 / 7;
+			grid-row: 1 / 7;
+
+			height: 100%;
+			width: 100%;
+		}
+	}
+}
+
+footer {
+	padding: 1.25rem 0.75rem 0.75rem 0.75rem;
+	grid-row: 3;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+p {
+	font-size: 1rem;
+}
+
+a {
+	padding: 0.25rem 0.5rem;
+	text-decoration: none;
+	color: inherit;
+	background-color: rgba(0, 0, 0, 0.75);
+	border-radius: 4px;
+	border: 1px solid rgba(0, 0, 0, 0);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 0.5rem;
+	box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.15);
+
+	&:hover {
+		color: $color_light_blue;
+		border: 1px solid $color_light_blue;
+	}
+}
+
+button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 0.5rem;
+	font-family: 'Latolight', sans-serif;
+	background-color: $color_white;
+	border: none;
+	border-radius: 4px;
+	padding: 0.25rem 0.5rem;
+	cursor: pointer;
+	box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.15);
+
+	&:hover {
+		background-color: $color_dark_gray;
+		color: $color_white;
+	}
+
+	&:active {
+		background-color: $color_dark_gray;
+		color: $color_white;
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+	&:disabled {
+		background-color: $color_dark_gray;
+		color: $color_white;
+		cursor: not-allowed;
+	}
+}
