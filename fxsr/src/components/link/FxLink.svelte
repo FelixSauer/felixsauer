@@ -1,30 +1,40 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
-	import { goto } from '$app/navigation';
-	import type { MenuItem } from '../../lib/models/menu';
 
 	export let target: string = '';
 	export let label: string = '';
 	export let iconName: string = '';
-	export let state: string = '';
-	export let internal: boolean = false;
+	export let disable: boolean = false;
 
 	function handleClick(): string {
-		if (internal) {
-			return '#' + target;
-		} else {
-			return target;
-		}
+		return target.includes('http') ? target : '#' + target;
 	}
 
-	function isDisabled(state: string) {
-		return state === 'disabled' ? 'disabled' : null;
+	function isDisabled(disable: boolean) {
+		return disable ? 'disabled' : null;
 	}
 </script>
 
-<a href={handleClick()} class={isDisabled(state)}>
+<a href={handleClick()} class={isDisabled(disable)}>
 	{#if iconName}
 		<Icon icon={iconName} />
 	{/if}
 	<span>{label}</span>
 </a>
+
+<style lang="scss">
+	a {
+		padding: 0.25rem 0.5rem 0.25rem 0;
+		text-decoration: none;
+		color: inherit;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 0.5rem;
+		font-size: 1em;
+
+		svg {
+			font-size: 1.2em;
+		}
+	}
+</style>

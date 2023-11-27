@@ -1,4 +1,4 @@
-export enum Pages {
+export enum PagesEnum {
 	home = 'home',
 	about = 'about',
 	services = 'services',
@@ -7,55 +7,98 @@ export enum Pages {
 	privacy = 'privacy'
 }
 
+export interface Section {
+	id: Page['id'];
+	name: Page['name'];
+	isVisible: boolean;
+}
+
 export interface Page {
 	id: number;
 	htmlTarget: string;
 	name: string;
+	content: PageContent;
+}
+
+export interface PageContent {
 	title: string;
-	content: string;
+	firstSubtitle?: string;
+	firstText?: string;
+	secondSubtitle?: string;
+	secondText?: string;
+	thirdSubtitle?: string;
+	thirdText?: string;
 }
 
 export const pages: Page[] = [
 	{
 		id: 1,
 		name: 'home',
-		htmlTarget: Pages.home,
-		title: 'Home',
-		content: 'Welcome to the home page!'
+		htmlTarget: PagesEnum.home,
+		content: {
+			title: 'hello there!',
+			firstSubtitle: 'First subtitle',
+			firstText: 'First text',
+			secondSubtitle: 'Second subtitle',
+			secondText: 'Second text',
+			thirdSubtitle: 'Third subtitle',
+			thirdText: 'Third text'
+		}
 	},
 	{
 		id: 2,
 		name: 'about',
-		htmlTarget: Pages.about,
-		title: 'About',
-		content: 'Welcome to the about page!'
+		htmlTarget: PagesEnum.about,
+		content: {
+			title: 'Welcome to the about page!',
+			firstSubtitle: 'First subtitle',
+			firstText: 'First text',
+			secondSubtitle: 'Second subtitle',
+			secondText: 'Second text',
+			thirdSubtitle: 'Third subtitle',
+			thirdText: 'Third text'
+		}
 	},
 	{
 		id: 3,
 		name: 'services',
-		htmlTarget: Pages.services,
-		title: 'Services',
-		content: 'Welcome to the services page!'
+		htmlTarget: PagesEnum.services,
+		content: {
+			title: 'Welcome to the services page!',
+			firstSubtitle: 'First subtitle',
+			firstText: 'First text',
+			secondSubtitle: 'Second subtitle',
+			secondText: 'Second text',
+			thirdSubtitle: 'Third subtitle',
+			thirdText: 'Third text'
+		}
 	},
 	{
 		id: 4,
 		name: 'contact',
-		htmlTarget: Pages.contact,
-		title: 'Contact',
-		content: 'Welcome to the contact page!'
+		htmlTarget: PagesEnum.contact,
+		content: {
+			title: 'Welcome to the contact page!',
+			firstSubtitle: 'First subtitle',
+			firstText: 'First text',
+			secondSubtitle: 'Second subtitle',
+			secondText: 'Second text',
+			thirdSubtitle: 'Third subtitle',
+			thirdText: 'Third text'
+		}
 	},
 	{
 		id: 5,
 		name: 'imprint',
-		htmlTarget: Pages.imprint,
-		title: 'Imprint',
-		content: 'Welcome to the imprint page!'
-	},
-	{
-		id: 6,
-		name: 'privacy',
-		htmlTarget: Pages.privacy,
-		title: 'Privacy',
-		content: 'Welcome to the privacy page!'
+		htmlTarget: PagesEnum.imprint,
+		content: {
+			title: 'Welcome to the imprint page!',
+			firstSubtitle: 'First subtitle',
+			firstText: 'First text',
+			secondSubtitle: 'Second subtitle',
+			secondText: 'Second text',
+			thirdSubtitle: 'Third subtitle',
+			thirdText: 'Third text'
+		}
 	}
 ];

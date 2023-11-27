@@ -1,8 +1,14 @@
-<script>
+<script lang="ts">
+	import { currentNavigationState } from '$lib/store';
 	import '../app.scss';
-	import Header from '../components/header/FxHeader.svelte';
-	import Footer from '../components/footer/FxFooter.svelte';
-	import FxVideo from '../components/video/FxVideo.svelte';
+	import FxFooter from '../components/footer/FxFooter.svelte';
+	import FxNavigation from '../components/navigation/FxNavigation.svelte';
+
+	let navActive: boolean = false;
+
+	currentNavigationState.subscribe((value) => {
+		navActive = value;
+	});
 </script>
 
 <svelte:head>
@@ -16,14 +22,30 @@
 	<title>fxsr / Felix Sauer / consulting and development</title>
 </svelte:head>
 
-<FxVideo />
+<FxNavigation />
+<main class:nav-active={navActive}>
+	<slot />
+</main>
+<FxFooter />
 
-<div class="layout">
-	<Header />
+<style lang="scss">
+	main {
+		width: 100vw;
+		height: 100vh;
+		overflow-y: scroll;
+	}
 
-	<main>
-		<slot />
-	</main>
+	.nav-active {
+		animation: fadeBackground 2s;
+		filter: blur(5px);
 
-	<Footer />
-</div>
+		@keyframes fadeBackground {
+			from {
+				filter: blur(0);
+			}
+			to {
+				filter: blur(5px);
+			}
+		}
+	}
+</style>

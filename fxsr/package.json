@@ -41,6 +41,7 @@
   "type": "module",
   "dependencies": {
     "normalize-scss": "^7.0.1",
-    "svelte-routing": "^2.6.0"
+    "svelte-routing": "^2.6.0",
+    "svelte-typewriter": "^3.2.2"
   }
 }

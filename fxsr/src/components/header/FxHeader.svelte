@@ -1,9 +1,22 @@
-<script lang="ts">
-	import FxNavigation from '../navigation/FxNavigation.svelte';
-	import { menu } from '../../lib/models/menu';
+<script>
+	import Typewriter from 'svelte-typewriter';
 </script>
 
-<header>
-	<span> logo </span>
-	<FxNavigation data={menu.mainMenu} mode={'buttons'} />
-</header>
+<header />
+
+<style lang="scss">
+	header {
+		display: grid;
+
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: repeat(8, 1fr);
+		gap: 1rem;
+		height: 4em;
+		grid-column: 2 / 12;
+		grid-row: 2 / 12;
+		h1 {
+			font-size: 3em;
+			font-weight: 400;
+		}
+	}
+</style>

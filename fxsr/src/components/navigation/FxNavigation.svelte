@@ -1,48 +1,140 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import FxButton from '../button/FxButton.svelte';
-	import FxLink from '../link/FxLink.svelte';
-	import type { MenuItem } from '../../lib/models/menu';
-	export let data: MenuItem[] = [];
-	export let mode = '';
+	import type { MenuItem } from '$lib/models/MenuItem';
+	import { currentNavigationState } from '$lib/store';
+	import { fly } from 'svelte/transition';
+	import Icon from '@iconify/svelte';
+	import Typewriter from 'svelte-typewriter';
+
+	let menu: MenuItem[] = [];
+	let flyIn: boolean = false;
+
+	async function fetchMainMenu() {
+		const res = await fetch(`/api/menumain`);
+		menu = await res.json();
+	}
+
+	currentNavigationState.subscribe((value) => {
+		flyIn = value;
+	});
+
+	function menuClick() {
+		!flyIn ? currentNavigationState.set(true) : currentNavigationState.set(false);
+	}
+
+	onMount(() => {
+		fetchMainMenu();
+	});
 </script>
 
-<nav class={mode}>
-	{#each data as item}
-		{#if mode === 'buttons'}
-			<FxButton
-				target={item.target}
-				label={item.label}
-				iconName={item.icon}
-				state={item.state}
-				internal={item.internal}
-			/>
-		{/if}
+<nav>
+	<div class="nav-bar">
+		<div
+			role="button"
+			class="menu-button"
+			tabindex="0"
+			on:mousedown={() => {
+				menuClick();
+			}}
+		>
+			{#if flyIn}
+				<Icon icon="line-md:menu-to-close-alt-transition" />
+			{:else}
+				<Icon icon="line-md:menu-fold-left" />
+			{/if}
+		</div>
+		<span>
+			<Typewriter interval="75">
+				<h1>~ felixsauer</h1>
+			</Typewriter>
+		</span>
+	</div>
 
-		{#if mode === 'links'}
-			<FxLink
-				target={item.target}
-				label={item.label}
-				iconName={item.icon}
-				state={item.state}
-				internal={item.internal}
-			/>
-		{/if}
-	{/each}
+	{#if flyIn}
+		<div
+			on:click={() => {
+				currentNavigationState.set(false);
+			}}
+			on:keydown={() => {
+				currentNavigationState.set(false);
+			}}
+			role="button"
+			tabindex="0"
+			class="main-menu"
+			in:fly={{ x: 1000, duration: 750 }}
+			out:fly={{ x: 1000, duration: 750 }}
+		>
+			{#each menu as item}
+				<FxButton
+					target={item.target}
+					label={item.label}
+					iconName={item.icon}
+					alignRight={item.alignRight}
+					disable={item.disable}
+					internal={item.internal}
+				/>
+			{/each}
+		</div>
+	{/if}
 </nav>
 
 <style lang="scss">
+	@import '../../app.scss';
+
 	nav {
 		display: flex;
-		flex-direction: row;
-		justify-content: flex-start;
-		align-items: center;
+		position: fixed;
+		top: 0;
+		right: 0;
+		height: 100%;
+		background-color: white;
+		z-index: 1000;
 
-		&.buttons {
-			gap: 0.5rem;
+		.nav-bar {
+			display: flex;
+			height: 100%;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+
+			.menu-button {
+				height: auto;
+				width: auto;
+				padding: 0.5rem 0.75rem;
+				font-size: 2.5em;
+				cursor: pointer;
+			}
+
+			span {
+				padding: 2rem 0.75rem;
+				writing-mode: vertical-rl;
+				transform: rotate(180deg);
+
+				h1,
+				p {
+					font-size: 2.5em;
+					margin: 0;
+				}
+			}
 		}
 
-		&.links {
-			gap: 1rem;
+		.main-menu {
+			display: grid;
+			flex-direction: column;
+			font-family: Lato, sans-serif;
+			font-size: 3.5em;
+			gap: 0.75em;
+			margin: 0.75em 0;
+			padding: 0 0.5em;
+			position: absolute;
+			top: 0;
+			justify-items: end;
+			transform: translateX(-100%);
+			width: auto;
+			z-index: 1000;
+			background-color: white;
+			box-shadow: 0px 0px 5px 5px #fff;
 		}
 	}
 </style>

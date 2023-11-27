@@ -1,25 +1,27 @@
 <script lang="ts">
-	import FxInfiniteScroll from '../components/infinitescroll/FxInfiniteScroll.svelte';
-	import { onMount, afterUpdate } from 'svelte';
-	import type { Page } from '../lib/models/pages';
-	import type { pages } from './$types';
+	import { afterUpdate, onMount } from 'svelte';
+	import FxSection from '../components/section/FxSection.svelte';
+	import type { Page } from '$lib/models/pages';
+	import { currentNavigationState } from '$lib/store';
 
 	export let pages: Page[] = [];
-
+	let isCurrentNavigationState: boolean = false;
 	let currentPage = 1;
 
 	async function fetchPages() {
 		const response = await fetch(`/api/pages`);
-
-		console.log(response);
-
 		const fetchedPages = await response.json();
 		pages = [...pages, ...fetchedPages];
 		currentPage++;
 	}
 
+	currentNavigationState.subscribe((value) => {
+		isCurrentNavigationState = value;
+		console.log('isCurrentNavigationState', isCurrentNavigationState);
+	});
+
 	function handleScroll() {
-		if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+		if (window.innerHeight + window.scrollX >= document.body.offsetHeight) {
 			fetchPages();
 		}
 	}
@@ -27,6 +29,9 @@
 	onMount(() => {
 		fetchPages();
 		window.addEventListener('scroll', handleScroll);
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
 	});
 
 	afterUpdate(() => {
@@ -37,5 +42,5 @@
 </script>
 
 {#each pages as page}
-	<FxInfiniteScroll {page} />
+	<FxSection {page} />
 {/each}
