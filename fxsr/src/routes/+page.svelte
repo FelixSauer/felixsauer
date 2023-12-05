@@ -1,12 +1,16 @@
 <script lang="ts">
-	import { afterUpdate, onMount } from 'svelte';
-	import FxSection from '../components/section/FxSection.svelte';
-	import type { Page } from '$lib/models/pages';
-	import { currentNavigationState } from '$lib/store';
+	import { onMount } from 'svelte';
+	import type { Page } from '$lib/models/Pages';
+	import TemplateWrapper from '../components/templates/wrapper/Wrapper.svelte';
+	import { navigationIsVisible, sectionIsVisible } from '$lib/store';
 
-	export let pages: Page[] = [];
-	let isCurrentNavigationState: boolean = false;
+	let pages: Page[] = [];
 	let currentPage = 1;
+	let navActive: boolean = false;
+
+	navigationIsVisible.subscribe((value) => {
+		navActive = value;
+	});
 
 	async function fetchPages() {
 		const response = await fetch(`/api/pages`);
@@ -15,32 +19,67 @@
 		currentPage++;
 	}
 
-	currentNavigationState.subscribe((value) => {
-		isCurrentNavigationState = value;
-		console.log('isCurrentNavigationState', isCurrentNavigationState);
-	});
+	function scrollHandler() {
+		const observer = new IntersectionObserver((element) => {
+			const fadeInTopPoint = window.innerHeight * 0.6;
+			const fadeInBottomPoint = window.innerHeight * 0.3;
+			const leafs: any[] = [];
+			element.map((entry) => leafs.push([entry.target.id, entry.boundingClientRect]));
 
-	function handleScroll() {
-		if (window.innerHeight + window.scrollX >= document.body.offsetHeight) {
-			fetchPages();
-		}
+			leafs.forEach((leaf) => {
+				if (leaf[1].top <= fadeInTopPoint && leaf[1].bottom >= fadeInBottomPoint) {
+					sectionIsVisible.set(leaf[0]);
+				}
+
+				if (leaf[1].top >= fadeInBottomPoint && leaf[1].bottom <= fadeInBottomPoint) {
+					sectionIsVisible.set(leaf[0]);
+				}
+			});
+		});
+
+		document.querySelectorAll('section').forEach((section) => {
+			observer.observe(section);
+		});
 	}
 
-	onMount(() => {
-		fetchPages();
-		window.addEventListener('scroll', handleScroll);
-		return () => {
-			window.removeEventListener('scroll', handleScroll);
-		};
-	});
-
-	afterUpdate(() => {
-		return () => {
-			window.removeEventListener('scroll', handleScroll);
-		};
+	onMount(async () => {
+		await fetchPages();
+		scrollHandler();
 	});
 </script>
 
-{#each pages as page}
-	<FxSection {page} />
-{/each}
+<svelte:window on:scroll={scrollHandler} />
+
+<main class:nav-active={navActive}>
+	{#each pages as page}
+		<section id={page.htmlTarget}>
+			<TemplateWrapper {page} />
+		</section>
+	{/each}
+</main>
+
+<style lang="scss">
+	main {
+		display: grid;
+		width: 100%;
+		height: 100%;
+	}
+
+	.nav-active {
+		animation: fadeBackground 2s;
+		filter: blur(5px);
+
+		@keyframes fadeBackground {
+			from {
+				filter: blur(0);
+			}
+			to {
+				filter: blur(5px);
+			}
+		}
+	}
+	section {
+		min-height: 100vh;
+		margin-bottom: 50px;
+	}
+</style>

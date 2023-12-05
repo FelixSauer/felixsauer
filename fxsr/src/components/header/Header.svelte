@@ -2,12 +2,15 @@
 	import Typewriter from 'svelte-typewriter';
 </script>
 
-<header />
+<header>
+	<Typewriter text="fxsr" cursor cursorStyle="|" delay={1000} loop scrambleSlowdown>
+		<h1>~ felixsauer</h1>
+	</Typewriter>
+</header>
 
 <style lang="scss">
 	header {
 		display: grid;
-
 		grid-template-columns: repeat(12, 1fr);
 		grid-template-rows: repeat(8, 1fr);
 		gap: 1rem;

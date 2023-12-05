@@ -1,5 +1,4 @@
 import type { MenuItem } from './MenuItem';
-import { PagesEnum } from './Pages';
 
 export const FooterMenu: MenuItem[] = [
 	{
@@ -12,21 +11,18 @@ export const FooterMenu: MenuItem[] = [
 		target: 'https://www.linkedin.com/in/felix-sauer/',
 		icon: 'line-md:linkedin'
 	},
-	{
-		label: 'discord',
-		target: 'https://www.linkedin.com/in/felix-sauer/',
-		icon: 'line-md:discord'
-	},
-	{
-		label: 'buymeacoffee',
-		target: 'https://www.buymeacoffee.com/felixsauer',
-		icon: 'line-md:buy-me-a-coffee-twotone',
-		disable: true
-	},
+
 	{
 		label: 'patreon',
 		target: 'patreon.com/fxsr',
 		icon: 'line-md:patreon',
+		disable: true
+	},
+
+	{
+		label: 'buymeacoffee',
+		target: 'https://www.buymeacoffee.com/felixsauer',
+		icon: 'line-md:buy-me-a-coffee-twotone',
 		disable: true
 	},
 	{
@@ -36,8 +32,14 @@ export const FooterMenu: MenuItem[] = [
 		disable: true
 	},
 	{
+		label: 'discord',
+		target: 'https://www.linkedin.com/in/felix-sauer/',
+		icon: 'line-md:discord'
+	},
+
+	{
 		label: 'Imprint',
-		target: PagesEnum.imprint,
+		target: 'imprint',
 		icon: 'imprint'
 	}
 ];

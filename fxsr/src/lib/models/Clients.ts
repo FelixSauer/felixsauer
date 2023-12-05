@@ -5,6 +5,8 @@ export interface Client {
 	logo?: string;
 }
 
+export const clintTile: string = 'Check out some of the brands that I`ve worked with.';
+
 export const clients: Client[] = [
 	{
 		id: 1,

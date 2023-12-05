@@ -39,13 +39,12 @@
 		width: auto;
 		//font-family: 'Latolight', sans-serif;
 		background-color: $color_white;
-		border: 1px solid $color_black;
-		border-radius: 4px;
+		border: unset;
 		padding: 0.25em 0.5em;
 		cursor: pointer;
 
 		&:hover {
-			background-color: $color_dark_gray;
+			background-color: grey;
 			color: $color_white;
 		}
 
@@ -62,8 +61,6 @@
 		&:disabled {
 			cursor: not-allowed;
 			text-decoration: line-through;
-			&:hover {
-			}
 		}
 	}
 

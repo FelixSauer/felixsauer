@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import FxButton from '../button/FxButton.svelte';
+	import FxButton from '../button/Button.svelte';
 	import type { MenuItem } from '$lib/models/MenuItem';
-	import { currentNavigationState } from '$lib/store';
+	import { navigationIsVisible } from '$lib/store';
 	import { fly } from 'svelte/transition';
 	import Icon from '@iconify/svelte';
 	import Typewriter from 'svelte-typewriter';
@@ -15,12 +15,12 @@
 		menu = await res.json();
 	}
 
-	currentNavigationState.subscribe((value) => {
+	navigationIsVisible.subscribe((value) => {
 		flyIn = value;
 	});
 
 	function menuClick() {
-		!flyIn ? currentNavigationState.set(true) : currentNavigationState.set(false);
+		!flyIn ? navigationIsVisible.set(true) : navigationIsVisible.set(false);
 	}
 
 	onMount(() => {
@@ -53,11 +53,14 @@
 
 	{#if flyIn}
 		<div
+			on:click_outside={() => {
+				navigationIsVisible.set(false);
+			}}
 			on:click={() => {
-				currentNavigationState.set(false);
+				navigationIsVisible.set(false);
 			}}
 			on:keydown={() => {
-				currentNavigationState.set(false);
+				navigationIsVisible.set(false);
 			}}
 			role="button"
 			tabindex="0"
@@ -67,6 +70,9 @@
 		>
 			{#each menu as item}
 				<FxButton
+					on:click_outside={() => {
+						navigationIsVisible.set(false);
+					}}
 					target={item.target}
 					label={item.label}
 					iconName={item.icon}
@@ -131,10 +137,10 @@
 			top: 0;
 			justify-items: end;
 			transform: translateX(-100%);
-			width: auto;
+			width: 30vw;
 			z-index: 1000;
 			background-color: white;
-			box-shadow: 0px 0px 5px 5px #fff;
+			box-shadow: 0px 0px 15px 15px #fff;
 		}
 	}
 </style>

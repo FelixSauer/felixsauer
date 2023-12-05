@@ -86,22 +86,22 @@ html {
 	background-color: $color_white;
 	color: $color_black;
 
-	::-webkit-scrollbar {
-		height: 100%;
-		width: 0.5em;
-		border-radius: 6px;
-		border: 1px solid rgba(255, 255, 255, 0.25);
-	}
+	// ::-webkit-scrollbar {
+	// 	height: 100%;
+	// 	width: 0.5em;
+	// 	border-radius: 6px;
+	// 	border: 1px solid rgba(255, 255, 255, 0.25);
+	// }
 
-	::-webkit-scrollbar-track {
-		height: 100%;
-		border-radius: 4px;
-	}
+	// ::-webkit-scrollbar-track {
+	// 	height: 100%;
+	// 	border-radius: 4px;
+	// }
 
-	::-webkit-scrollbar-thumb {
-		background: rgba(255, 255, 255, 0.75);
-		border: 1px solid rgba(255, 255, 255, 0.75);
-		border-radius: 6px;
-		height: 100px;
-	}
+	// ::-webkit-scrollbar-thumb {
+	// 	background: rgba(255, 255, 255, 0.75);
+	// 	border: 1px solid rgba(255, 255, 255, 0.75);
+	// 	border-radius: 6px;
+	// 	height: 100px;
+	// }
 }

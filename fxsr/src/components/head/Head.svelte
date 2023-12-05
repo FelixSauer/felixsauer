@@ -1,9 +1,3 @@
-<script lang="ts">
-	import '../app.scss';
-	import Footer from '../components/footer/Footer.svelte';
-	import Navigation from '../components/navigation/Navigation.svelte';
-</script>
-
 <svelte:head>
 	<link
 		rel="stylesheet"
@@ -12,11 +6,5 @@
 		crossorigin="anonymous"
 		referrerpolicy="no-referrer"
 	/>
-	<title>~ fxsr consulting and development</title>
+	<title>fxsr / Felix Sauer / consulting and development</title>
 </svelte:head>
-
-<Navigation />
-
-<slot />
-
-<Footer />

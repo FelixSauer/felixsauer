@@ -1,6 +1,6 @@
-import { pages } from '$lib/models/Pages';
+import { data } from '$lib/models/Pages';
 import { json } from '@sveltejs/kit';
 
 export function GET() {
-	return json(pages);
+	return json(data);
 }

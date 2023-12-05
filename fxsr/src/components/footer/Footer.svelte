@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import FxLink from '../link/FxLink.svelte';
+	import FxLink from '../link/Link.svelte';
 	import type { MenuItem } from '$lib/models/MenuItem';
 
 	let menu: MenuItem[] = [];

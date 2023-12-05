@@ -1,20 +1,6 @@
-export enum PagesEnum {
-	home = 'home',
-	about = 'about',
-	services = 'services',
-	contact = 'contact',
-	imprint = 'imprint',
-	privacy = 'privacy'
-}
-
-export interface Section {
-	id: Page['id'];
-	name: Page['name'];
-	isVisible: boolean;
-}
-
 export interface Page {
 	id: number;
+	isVisible?: boolean;
 	htmlTarget: string;
 	name: string;
 	content: PageContent;
@@ -30,17 +16,19 @@ export interface PageContent {
 	thirdText?: string;
 }
 
-export const pages: Page[] = [
+export const data: Page[] = [
 	{
 		id: 1,
-		name: 'home',
-		htmlTarget: PagesEnum.home,
+		name: 'landing',
+		htmlTarget: 'landing',
 		content: {
-			title: 'hello there!',
-			firstSubtitle: 'First subtitle',
-			firstText: 'First text',
+			title: 'hey there!',
+			firstSubtitle: 'I`m Felix, a web developer from Germany.',
+			firstText:
+				'Lorum ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio eget nunc aliquam lacinia. Donec euismod, nisl eget aliquam aliquet, nisl nisl aliquam nisl, nec aliquam nisl nisl nec nisl. Lorum ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio eget nunc aliquam lacinia. Donec euismod, nisl eget aliquam aliquet, nisl nisl aliquam nisl, nec aliquam nisl nisl nec nisl.',
 			secondSubtitle: 'Second subtitle',
-			secondText: 'Second text',
+			secondText:
+				'Lorum ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio eget nunc aliquam lacinia. Donec euismod, nisl eget aliquam aliquet, nisl nisl aliquam nisl, nec aliquam nisl nisl nec nisl. Lorum ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio eget nunc aliquam lacinia. Donec euismod, nisl eget aliquam aliquet, nisl nisl aliquam nisl, nec aliquam nisl nisl nec nisl.',
 			thirdSubtitle: 'Third subtitle',
 			thirdText: 'Third text'
 		}
@@ -48,13 +36,15 @@ export const pages: Page[] = [
 	{
 		id: 2,
 		name: 'about',
-		htmlTarget: PagesEnum.about,
+		htmlTarget: 'about',
 		content: {
-			title: 'Welcome to the about page!',
-			firstSubtitle: 'First subtitle',
-			firstText: 'First text',
+			title: 'About',
+			firstSubtitle: 'web developer from Germany.',
+			firstText:
+				'Lorum ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio eget nunc aliquam lacinia. Donec euismod, nisl eget aliquam aliquet, nisl nisl aliquam nisl, nec aliquam nisl nisl nec nisl. Lorum ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio eget nunc aliquam lacinia. Donec euismod, nisl eget aliquam aliquet, nisl nisl aliquam nisl, nec aliquam nisl nisl nec nisl.',
 			secondSubtitle: 'Second subtitle',
-			secondText: 'Second text',
+			secondText:
+				'Lorum ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio eget nunc aliquam lacinia. Donec euismod, nisl eget aliquam aliquet, nisl nisl aliquam nisl, nec aliquam nisl nisl nec nisl. Lorum ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio eget nunc aliquam lacinia. Donec euismod, nisl eget aliquam aliquet, nisl nisl aliquam nisl, nec aliquam nisl nisl nec nisl.',
 			thirdSubtitle: 'Third subtitle',
 			thirdText: 'Third text'
 		}
@@ -62,13 +52,15 @@ export const pages: Page[] = [
 	{
 		id: 3,
 		name: 'services',
-		htmlTarget: PagesEnum.services,
+		htmlTarget: 'services',
 		content: {
-			title: 'Welcome to the services page!',
-			firstSubtitle: 'First subtitle',
-			firstText: 'First text',
+			title: 'Services',
+			firstSubtitle: 'I`m Felix, a web developer from Germany.',
+			firstText:
+				'Lorum ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio eget nunc aliquam lacinia. Donec euismod, nisl eget aliquam aliquet, nisl nisl aliquam nisl, nec aliquam nisl nisl nec nisl. Lorum ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio eget nunc aliquam lacinia. Donec euismod, nisl eget aliquam aliquet, nisl nisl aliquam nisl, nec aliquam nisl nisl nec nisl.',
 			secondSubtitle: 'Second subtitle',
-			secondText: 'Second text',
+			secondText:
+				'Lorum ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio eget nunc aliquam lacinia. Donec euismod, nisl eget aliquam aliquet, nisl nisl aliquam nisl, nec aliquam nisl nisl nec nisl. Lorum ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio eget nunc aliquam lacinia. Donec euismod, nisl eget aliquam aliquet, nisl nisl aliquam nisl, nec aliquam nisl nisl nec nisl.',
 			thirdSubtitle: 'Third subtitle',
 			thirdText: 'Third text'
 		}
@@ -76,13 +68,15 @@ export const pages: Page[] = [
 	{
 		id: 4,
 		name: 'contact',
-		htmlTarget: PagesEnum.contact,
+		htmlTarget: 'contact',
 		content: {
-			title: 'Welcome to the contact page!',
-			firstSubtitle: 'First subtitle',
-			firstText: 'First text',
+			title: 'Contact',
+			firstSubtitle: 'I`m Felix, a web developer from Germany.',
+			firstText:
+				'Lorum ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio eget nunc aliquam lacinia. Donec euismod, nisl eget aliquam aliquet, nisl nisl aliquam nisl, nec aliquam nisl nisl nec nisl. Lorum ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio eget nunc aliquam lacinia. Donec euismod, nisl eget aliquam aliquet, nisl nisl aliquam nisl, nec aliquam nisl nisl nec nisl.',
 			secondSubtitle: 'Second subtitle',
-			secondText: 'Second text',
+			secondText:
+				'Lorum ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio eget nunc aliquam lacinia. Donec euismod, nisl eget aliquam aliquet, nisl nisl aliquam nisl, nec aliquam nisl nisl nec nisl. Lorum ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio eget nunc aliquam lacinia. Donec euismod, nisl eget aliquam aliquet, nisl nisl aliquam nisl, nec aliquam nisl nisl nec nisl.',
 			thirdSubtitle: 'Third subtitle',
 			thirdText: 'Third text'
 		}
@@ -90,13 +84,15 @@ export const pages: Page[] = [
 	{
 		id: 5,
 		name: 'imprint',
-		htmlTarget: PagesEnum.imprint,
+		htmlTarget: 'imprint',
 		content: {
-			title: 'Welcome to the imprint page!',
-			firstSubtitle: 'First subtitle',
-			firstText: 'First text',
+			title: 'Imprint',
+			firstSubtitle: 'I`m Felix, a web developer from Germany.',
+			firstText:
+				'Lorum ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio eget nunc aliquam lacinia. Donec euismod, nisl eget aliquam aliquet, nisl nisl aliquam nisl, nec aliquam nisl nisl nec nisl. Lorum ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio eget nunc aliquam lacinia. Donec euismod, nisl eget aliquam aliquet, nisl nisl aliquam nisl, nec aliquam nisl nisl nec nisl.',
 			secondSubtitle: 'Second subtitle',
-			secondText: 'Second text',
+			secondText:
+				'Lorum ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio eget nunc aliquam lacinia. Donec euismod, nisl eget aliquam aliquet, nisl nisl aliquam nisl, nec aliquam nisl nisl nec nisl. Lorum ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio eget nunc aliquam lacinia. Donec euismod, nisl eget aliquam aliquet, nisl nisl aliquam nisl, nec aliquam nisl nisl nec nisl.',
 			thirdSubtitle: 'Third subtitle',
 			thirdText: 'Third text'
 		}
