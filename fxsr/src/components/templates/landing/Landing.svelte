@@ -1,8 +1,7 @@
 <script lang="ts">
 	import type { Page } from '$lib/models/Pages';
 	import { sectionIsVisible } from '$lib/store';
-	import { onMount } from 'svelte';
-	import Typewriter from 'svelte-typewriter';
+	import { afterUpdate, beforeUpdate, onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
 
 	export let page: Page;
@@ -12,7 +11,7 @@
 		return (isVisible = value === page.htmlTarget ? true : false);
 	});
 
-	onMount(() => {
+	beforeUpdate(() => {
 		isVisible = true;
 	});
 </script>

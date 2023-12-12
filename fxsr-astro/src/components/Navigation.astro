@@ -1,0 +1,44 @@
+---
+import { MainMenu } from '@data/MenuMain';
+import type { MenuItem } from '@interfaces/menu';
+import Icon from './Button.astro';
+---
+
+<nav class="absolute right-1 top-1 h-full">
+	<div id="navigation-toggle" data-testid="navigation-toggle" class="h-6 w-6">
+		<Icon name="line-md--close-to-menu-transition" />
+	</div>
+
+	<div>
+		<ul class="gap-5">
+			{
+				MainMenu.map((menuItem: MenuItem) => (
+					<li>
+						<a
+							href={menuItem.target}
+							data-testid={menuItem.label}
+							class="inline-flex cursor-pointer items-center gap-2 hover:animate-bounce hover:underline"
+						>
+							{menuItem.label && <label class="m-0">{menuItem.label}</label>}
+							{menuItem.icon && <icon class={menuItem.icon} />}
+						</a>
+					</li>
+				))
+			}
+		</ul>
+	</div>
+</nav>
+
+<script>
+	const toggleIcon = document.querySelector('#navigation-toggle--icon');
+
+	document.querySelector('#navigation-toggle').addEventListener('click', () => {
+		if (toggleIcon.classList.contains('icon-[line-md--close-to-menu-transition]')) {
+			toggleIcon.classList.remove('icon-[line-md--close-to-menu-transition]');
+			toggleIcon.classList.add('icon-[line-md--menu-to-close-transition]');
+		} else {
+			toggleIcon.classList.remove('icon-[line-md--menu-to-close-transition]');
+			toggleIcon.classList.add('icon-[line-md--close-to-menu-transition]');
+		}
+	});
+</script>

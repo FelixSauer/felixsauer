@@ -3,6 +3,7 @@
 	import type { Page } from '$lib/models/Pages';
 	import TemplateWrapper from '../components/templates/wrapper/Wrapper.svelte';
 	import { navigationIsVisible, sectionIsVisible } from '$lib/store';
+	import { Jumper } from 'svelte-loading-spinners';
 
 	let pages: Page[] = [];
 	let currentPage = 1;
@@ -24,6 +25,7 @@
 			const fadeInTopPoint = window.innerHeight * 0.6;
 			const fadeInBottomPoint = window.innerHeight * 0.3;
 			const leafs: any[] = [];
+
 			element.map((entry) => leafs.push([entry.target.id, entry.boundingClientRect]));
 
 			leafs.forEach((leaf) => {
@@ -50,13 +52,17 @@
 
 <svelte:window on:scroll={scrollHandler} />
 
-<main class:nav-active={navActive}>
-	{#each pages as page}
-		<section id={page.htmlTarget}>
-			<TemplateWrapper {page} />
-		</section>
-	{/each}
-</main>
+{#await pages}
+	<Jumper size="60" color="#FF3E00" unit="px" duration="1s" />
+{:then a}
+	<main class:nav-active={navActive}>
+		{#each pages as page}
+			<section id={page.htmlTarget}>
+				<TemplateWrapper {page} />
+			</section>
+		{/each}
+	</main>
+{/await}
 
 <style lang="scss">
 	main {

@@ -27,20 +27,6 @@
 			<h3 in:fly={{ x: -1000, duration: 750 }}>{page.content.secondSubtitle}</h3>
 			<p in:fly={{ x: 1000, duration: 750 }}>{page.content.secondText}</p>
 		</span>
-		<!---ABOUT-->
-		<p in:fly={{ x: -10, duration: 750 }}>{page.content.title}</p>
-		<span>
-			<h3 in:fly={{ x: -1000, duration: 750 }}>{page.content.firstSubtitle}</h3>
-			<p in:fly={{ x: 1000, duration: 750 }}>{page.content.firstText}</p>
-		</span>
-		<span>
-			<h3 in:fly={{ x: -1000, duration: 750 }}>{page.content.secondSubtitle}</h3>
-			<p in:fly={{ x: 1000, duration: 750 }}>{page.content.secondText}</p>
-		</span>
-		<span>
-			<h3 in:fly={{ x: -1000, duration: 750 }}>{page.content.secondSubtitle}</h3>
-			<p in:fly={{ x: 1000, duration: 750 }}>{page.content.secondText}</p>
-		</span>
 	</article>
 {/if}
 

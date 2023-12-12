@@ -1,0 +1,25 @@
+---
+import { FooterMenu } from '@data/MenuFooter'
+
+import type { MenuItem } from '@interfaces/menu'
+---
+
+<footer class="flex justify-center">
+	<ul class="m-4 flex gap-6 text-base">
+		{
+			FooterMenu.map((menuItem: MenuItem) => (
+				<li class="flex">
+					<a
+						href={menuItem.target}
+						data-testid={menuItem.label}
+						class="inline-flex cursor-pointer items-center hover:animate-bounce hover:underline gap-2"
+						target="_blank"
+					>
+						{menuItem.icon && <icon class={menuItem.icon} />}
+						{menuItem.label && menuItem.label}
+					</a>
+				</li>
+			))
+		}
+	</ul>
+</footer>

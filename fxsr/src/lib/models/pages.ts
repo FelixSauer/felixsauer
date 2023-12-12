@@ -1,5 +1,5 @@
 export interface Page {
-	id: number;
+	id: string;
 	isVisible?: boolean;
 	htmlTarget: string;
 	name: string;
@@ -18,7 +18,7 @@ export interface PageContent {
 
 export const data: Page[] = [
 	{
-		id: 1,
+		id: 'landing',
 		name: 'landing',
 		htmlTarget: 'landing',
 		content: {
@@ -34,7 +34,7 @@ export const data: Page[] = [
 		}
 	},
 	{
-		id: 2,
+		id: 'about',
 		name: 'about',
 		htmlTarget: 'about',
 		content: {
@@ -50,7 +50,7 @@ export const data: Page[] = [
 		}
 	},
 	{
-		id: 3,
+		id: 'services',
 		name: 'services',
 		htmlTarget: 'services',
 		content: {
@@ -66,7 +66,7 @@ export const data: Page[] = [
 		}
 	},
 	{
-		id: 4,
+		id: 'contact',
 		name: 'contact',
 		htmlTarget: 'contact',
 		content: {
@@ -82,7 +82,7 @@ export const data: Page[] = [
 		}
 	},
 	{
-		id: 5,
+		id: 'imprint',
 		name: 'imprint',
 		htmlTarget: 'imprint',
 		content: {
