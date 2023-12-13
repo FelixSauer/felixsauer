@@ -1,11 +1,15 @@
-# Hello there!
-*I'm Felix, a software developer from Stuttgart.*
+<!-- @format -->
 
-### What keeps me busy all day long?
-*Angular, React, Lit*
+### Hello there! 
 
-### Favorite current toy
-astro, htmx, Svelt
+I'm Felix and I looking to make wwell designed and practical software solutions.
 
-### What makes me cry like a baby?
+  
+**What keeps me busy all day long at work?** <br/>
+Angular, React, Lit, 
+
+**"Favorite current toy?** <br/>
+astro, htmx, Svelte
+
+**What makes me cry like a baby?** <br/>
 rabbit holes like Confluence
