@@ -2,7 +2,7 @@
 
 ### Hello there! 
 
-I'm Felix and I looking to make wwell designed and practical software solutions.
+*I'm Felix and I looking to make well designed and practical stuff.*
 
   
 **What keeps me busy all day long at work?** <br/>
