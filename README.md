@@ -1,9 +1,6 @@
 <!-- @format -->
 
 ### Hello there! 
-
-*I'm Felix and I looking to make well designed and practical stuff.*
-
   
 **What keeps me busy all day long at work?** <br/>
 Angular, React, Lit, 
