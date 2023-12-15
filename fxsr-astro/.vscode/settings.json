@@ -1,8 +1,0 @@
-{
-	"cSpell.words": ["astrojs", "fxsr", "iconify", "tailwindcss"],
-	"eslint.validate": ["javascript", "javascriptreact", "astro", "typescript", "typescriptreact"],
-	"prettier.documentSelectors": ["**/*.astro"],
-	"[astro]": {
-		"editor.defaultFormatter": "astro-build.astro-vscode"
-	}
-}
