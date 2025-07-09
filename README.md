@@ -8,8 +8,6 @@
 - Based in Stuttgart, right in the heart of Germany's automotive and tech scene.
 - Powered by coffee and curiosity.
 
----
-
 ## 🛠️ Technologies that I Use
 <p>
   <img src="https://skillicons.dev/icons?i=ts,go,java,dart,lua,html,css"/>
