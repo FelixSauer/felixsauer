@@ -36,28 +36,3 @@
 </p>
 
 ---
-
-### 📊 GitHub Stats
-<p >
-    <img src="https://github-readme-stats.vercel.app/api?username=fxsr&show_icons=true&theme=one_dark_pro&hide_border=true" alt="Felix's GitHub Stats" height="170"/>
-</p>
-<p>
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=fxsr&layout=compact&theme=one_dark_pro&hide_border=true" alt="Felix's Top Languages" height="170"/>
-</p>
-  <p>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=fxsr&theme=one_dark_pro&hide_border=true" alt="Felix's GitHub Streak" />
-</p>
----
-
-### 📫 Let's Connect
-<p>
-    <a href="https://www.linkedin.com/in/felix-sauer/">
-        <img src="https://img.shields.io/badge/LinkedIn-Felix_Sauer-blue?style=for-the-badge&logo=linkedin&logoColor=white"/>
-    </a>
-    <a href="mailto:felixsauer82@gmail.com">
-        <img src="https://img.shields.io/badge/Email-felixsauer82@gmail.com-blue?style=for-the-badge&logo=gmail&logoColor=white"/>
-    </a>
-    <a href="https://github.com/fxsr">
-        <img src="https://img.shields.io/badge/GitHub-fxsr-blue?style=for-the-badge&logo=github&logoColor=white"/>
-    </a>
-</p>
