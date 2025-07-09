@@ -1,5 +1,3 @@
-<!-- @format -->
-
 # 👋 Hey there, I'm Felix Sauer
 
 ### 🧑‍💻 About Me
@@ -34,5 +32,3 @@
 <p>
   <img src="https://skillicons.dev/icons?i=idea,neovim,arduino,obsidian,postman,figma,ps,ai,xd"/>
 </p>
-
----
