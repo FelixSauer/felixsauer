@@ -103,10 +103,8 @@
 </p>
 <p>
   <a href="https://www.jetbrains.com/idea/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=intellijidea" alt="IntelliJ IDEA" title="IntelliJ IDEA: Powerful IDE for JVM languages and web development." /></a>
-  <a href="https://go.dev/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=goland" alt="GoLand" title="GoLand: JetBrains IDE for Go development." /></a>
   <a href="https://code.visualstudio.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=vscode" alt="VS Code" title="VS Code: Popular open-source code editor by Microsoft." /></a>
   <a href="https://neovim.io/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=neovim" alt="Neovim" title="Neovim: Hyperextensible Vim-based text editor." /></a>
-  <a href="https://alacritty.org/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=alacritty" alt="Alacritty" title="Alacritty: Fast, GPU-accelerated terminal emulator." /></a>
   <a href="https://www.postman.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=postman" alt="Postman" title="Postman: API platform for building and testing APIs." /></a>
   <a href="https://www.thunderclient.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=thunderclient" alt="Thunder Client" title="Thunder Client: Lightweight REST API client for VS Code." /></a>
   <a href="https://www.figma.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=figma" alt="Figma" title="Figma: Collaborative interface design tool." /></a>
