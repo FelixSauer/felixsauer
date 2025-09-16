@@ -10,7 +10,7 @@
 
 ## 🛠️ Technologies that I Use
 <p>
-  <img src="https://skills.syvixor.com/api/icons?i=ts,go,java,lua,html,css3"/>
+  <img src="https://skills.syvixor.com/api/icons?i=ts,go,java,lua,html,css3,js"/>
 </p>
 <p>
   <img src="https://skills.syvixor.com/api/icons?i=react,nextjs,payload,svelte,astro,angular,spring,tailwind,sass,postcss,gsap"/>
