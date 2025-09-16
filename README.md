@@ -45,6 +45,7 @@
 </p>
 <p>
   <a href="https://www.npmjs.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=npm" alt="npm" title="npm" /></a>
+  <a href="https://www.pnpm.io/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=pnpm" alt="pnpm" title="pnpm" /></a>
   <a href="https://yarnpkg.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=yarn" alt="Yarn" title="Yarn" /></a>
   <a href="https://eslint.org/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=eslint" alt="ESLint" title="ESLint" /></a>
   <a href="https://prettier.io/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=prettier" alt="Prettier" title="Prettier" /></a>
@@ -77,6 +78,7 @@
   <a href="https://git-scm.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=git" alt="Git" title="Git" /></a>
   <a href="https://github.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=github" alt="GitHub" title="GitHub" /></a>
   <a href="https://github.com/features/actions" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=githubactions" alt="GitHub Actions" title="GitHub Actions" /></a>
+  <a href="https://pages.github.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=githubpages" alt="GitHub Pages" title="GitHub Pages" /></a>
   <a href="https://about.gitlab.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=gitlab" alt="GitLab" title="GitLab" /></a>
   <a href="https://azure.microsoft.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=azure" alt="Azure" title="Azure" /></a>
   <a href="https://www.cloudflare.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=cloudflare" alt="Cloudflare" title="Cloudflare" /></a>
@@ -87,10 +89,11 @@
   <a href="https://www.docker.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=docker" alt="Docker" title="Docker" /></a>
   <a href="https://kubernetes.io/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=kubernetes" alt="Kubernetes" title="Kubernetes" /></a>
   <a href="https://k3s.io/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=k3s" alt="k3s" title="k3s" /></a>
-  <a href="https://argo-cd.readthedocs.io/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=argocd" alt="ArgoCD" title="ArgoCD" /></a>
-  <a href="https://www.ansible.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=ansible" alt="Ansible" title="Ansible" /></a>
   <a href="https://grafana.com/oss/loki/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=loki" alt="Loki" title="Loki" /></a>
+  <a href="https://argo-cd.readthedocs.io/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=argocd" alt="ArgoCD" title="ArgoCD" /></a>
   <a href="https://traefik.io/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=traefik" alt="Traefik" title="Traefik" /></a>
+  <a href="https://weblate.org/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=weblate" alt="Weblate" title="Weblate" /></a>
+  <a href="https://www.ansible.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=ansible" alt="Ansible" title="Ansible" /></a>
 </p>
 <p>
   <a href="https://www.apple.com/macos/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=apple" alt="Apple macOS" title="Apple macOS" /></a>
@@ -108,12 +111,11 @@
   <a href="https://alacritty.org/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=alacritty" alt="Alacritty" title="Alacritty" /></a>
   <a href="https://www.postman.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=postman" alt="Postman" title="Postman" /></a>
   <a href="https://www.thunderclient.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=thunderclient" alt="Thunder Client" title="Thunder Client" /></a>
-  <a href="https://storybook.js.org/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=storybook" alt="Storybook" title="Storybook" /></a>
-  <a href="https://www.sketch.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=sketch" alt="Sketch" title="Sketch" /></a>
   <a href="https://www.figma.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=figma" alt="Figma" title="Figma" /></a>
+  <a href="https://storybook.js.org/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=storybook" alt="Storybook" title="Storybook" /></a>
+  <a href="https://www.adobe.com/products/xd.html" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=xd" alt="Adobe XD" title="Adobe XD" /></a>
   <a href="https://www.adobe.com/products/photoshop.html" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=ps" alt="Adobe Photoshop" title="Adobe Photoshop" /></a>
   <a href="https://www.adobe.com/products/illustrator.html" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=adobeillustrator" alt="Adobe Illustrator" title="Adobe Illustrator" /></a>
-  <a href="https://www.adobe.com/products/xd.html" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=xd" alt="Adobe XD" title="Adobe XD" /></a>
 </p>
 <p>
   <a href="https://www.atlassian.com/software/jira" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=jira" alt="Jira" title="Jira" /></a>
@@ -126,4 +128,17 @@
   <a href="https://n8n.io/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=n8n" alt="n8n" title="n8n" /></a>
   <a href="https://chat.openai.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=chatgpt" alt="ChatGPT" title="ChatGPT" /></a>
   <a href="https://ollama.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=ollama" alt="Ollama" title="Ollama" /></a>
+</p>
+
+
+## 📖 Technologies to learn
+<p>
+  <a href="https://www.rust-lang.org/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=rust" alt="Rust" title="Rust" /></a>
+  <a href="https://kotlinlang.org/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=kotlin" alt="Kotlin" title="Kotlin" /></a>
+  <a href="https://swift.org/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=swift" alt="Swift" title="Swift" /></a>
+  <a href="https://flutter.dev/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=flutter" alt="Flutter" title="Flutter" /></a>
+  <a href="https://dart.dev/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=dart" alt="Dart" title="Dart" /></a>
+  <a href="https://www.terraform.io/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=terraform" alt="Terraform" title="Terraform" /></a>
+  <a href="https://webassembly.org/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=webassembly" alt="WebAssembly" title="WebAssembly" /></a>
+  <a href="https://ziglang.org/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=zig" alt="Zig" title="Zig" /></a>
 </p>
