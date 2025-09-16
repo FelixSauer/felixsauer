@@ -85,8 +85,8 @@
 </p>
 <p>
   <a href="https://www.docker.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=docker" alt="Docker" title="Docker" /></a>
-  <a href="https://k3s.io/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=k3s" alt="k3s" title="k3s" /></a>
   <a href="https://kubernetes.io/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=kubernetes" alt="Kubernetes" title="Kubernetes" /></a>
+  <a href="https://k3s.io/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=k3s" alt="k3s" title="k3s" /></a>
   <a href="https://argo-cd.readthedocs.io/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=argocd" alt="ArgoCD" title="ArgoCD" /></a>
   <a href="https://www.ansible.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=ansible" alt="Ansible" title="Ansible" /></a>
   <a href="https://grafana.com/oss/loki/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=loki" alt="Loki" title="Loki" /></a>
