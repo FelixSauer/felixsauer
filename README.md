@@ -1,4 +1,4 @@
-# 👋 Hey there, I'm Felix Sauer
+# 👋 Hey there, I'm Felix
 
 ### 🧑‍💻 About Me
 - I'm a Senior Dev from Stuttgart, with a love for automation, architecture, clean code and the kind of systems that don't break on Fridays. 
@@ -40,8 +40,6 @@
   <a href="https://www.skeleton.dev/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=skeletonui" alt="Skeleton UI" title="Skeleton UI: UI toolkit for Svelte and web apps." /></a>
   <a href="https://ant.design/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=antdesign" alt="Ant Design" title="Ant Design: Enterprise-class React UI framework." /></a>
   <a href="https://m3.material.io/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=materialdesign" alt="Material Design" title="Material Design: Google’s design system for beautiful digital experiences." /></a>
-  <a href="https://www.chartjs.org/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=chartjs" alt="Chart.js" title="Chart.js: Simple yet flexible JavaScript charting library." /></a>
-  <a href="https://mui.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=mui" alt="MUI" title="MUI: React UI library implementing Material Design." /></a>
 </p>
 <p>
   <a href="https://www.npmjs.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=npm" alt="npm" title="npm: Node.js package manager for JavaScript libraries." /></a>
@@ -89,9 +87,9 @@
   <a href="https://www.docker.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=docker" alt="Docker" title="Docker: Platform for developing, shipping, and running containers." /></a>
   <a href="https://kubernetes.io/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=kubernetes" alt="Kubernetes" title="Kubernetes: Container orchestration for automating deployment and scaling." /></a>
   <a href="https://k3s.io/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=k3s" alt="k3s" title="k3s: Lightweight Kubernetes distribution for edge and IoT." /></a>
+  <a href="https://traefik.io/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=traefik" alt="Traefik" title="Traefik: Cloud-native edge router and reverse proxy." /></a>
   <a href="https://grafana.com/oss/loki/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=loki" alt="Loki" title="Loki: Log aggregation system for cloud native infrastructure." /></a>
   <a href="https://argo-cd.readthedocs.io/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=argocd" alt="ArgoCD" title="ArgoCD: Declarative GitOps continuous delivery for Kubernetes." /></a>
-  <a href="https://traefik.io/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=traefik" alt="Traefik" title="Traefik: Cloud-native edge router and reverse proxy." /></a>
   <a href="https://weblate.org/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=weblate" alt="Weblate" title="Weblate: Web-based translation tool for collaborative localization." /></a>
   <a href="https://www.ansible.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=ansible" alt="Ansible" title="Ansible: Automation tool for IT tasks like configuration and deployment." /></a>
 </p>
@@ -136,8 +134,6 @@
   <a href="https://www.rust-lang.org/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=rust" alt="Rust" title="Rust: Memory-safe systems programming language for performance and reliability." /></a>
   <a href="https://kotlinlang.org/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=kotlin" alt="Kotlin" title="Kotlin: Modern, expressive language for JVM, Android, and more." /></a>
   <a href="https://swift.org/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=swift" alt="Swift" title="Swift: Fast, safe, and expressive language for Apple platforms." /></a>
-  <a href="https://flutter.dev/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=flutter" alt="Flutter" title="Flutter: UI toolkit for building natively compiled apps from a single codebase." /></a>
-  <a href="https://dart.dev/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=dart" alt="Dart" title="Dart: Optimized language for fast apps on any platform, powering Flutter." /></a>
   <a href="https://www.terraform.io/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=terraform" alt="Terraform" title="Terraform: Infrastructure as code tool for provisioning cloud resources." /></a>
   <a href="https://webassembly.org/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=webassembly" alt="WebAssembly" title="WebAssembly: Binary instruction format for fast, portable code on the web." /></a>
   <a href="https://ziglang.org/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=zig" alt="Zig" title="Zig: General-purpose programming language for robust, optimal software." /></a>
