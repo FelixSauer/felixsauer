@@ -121,9 +121,9 @@
   <a href="https://www.chromium.org/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=chromium" alt="Chromium" title="Chromium: Open-source web browser project powering Chrome." /></a>
   <a href="https://obsidian.md/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=obsidian" alt="Obsidian" title="Obsidian: Knowledge base and note-taking app with markdown support." /></a>
   <a href="https://github.com/features/copilot" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=githubcopilot" alt="GitHub Copilot" title="GitHub Copilot: AI-powered code completion tool." /></a>
-  <a href="https://n8n.io/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=n8n" alt="n8n" title="n8n: Workflow automation tool for connecting apps and services." /></a>
   <a href="https://chat.openai.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=chatgpt" alt="ChatGPT" title="ChatGPT: Conversational AI assistant by OpenAI." /></a>
   <a href="https://ollama.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=ollama" alt="Ollama" title="Ollama: Local LLMs and AI chat on your own machine." /></a>
+  <a href="https://n8n.io/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=n8n" alt="n8n" title="n8n: Workflow automation tool for connecting apps and services." /></a>
 </p>
 
 
