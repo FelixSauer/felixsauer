@@ -112,7 +112,7 @@
   <a href="https://www.sketch.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=sketch" alt="Sketch" title="Sketch" /></a>
   <a href="https://www.figma.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=figma" alt="Figma" title="Figma" /></a>
   <a href="https://www.adobe.com/products/photoshop.html" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=ps" alt="Adobe Photoshop" title="Adobe Photoshop" /></a>
-  <a href="https://www.adobe.com/products/illustrator.html" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=ai" alt="Adobe Illustrator" title="Adobe Illustrator" /></a>
+  <a href="https://www.adobe.com/products/illustrator.html" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=adobeillustrator" alt="Adobe Illustrator" title="Adobe Illustrator" /></a>
   <a href="https://www.adobe.com/products/xd.html" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=xd" alt="Adobe XD" title="Adobe XD" /></a>
 </p>
 <p>
