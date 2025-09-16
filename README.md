@@ -10,23 +10,41 @@
 
 ## 🛠️ Technologies that I Use
 <p>
-  <img src="https://skillicons.dev/icons?i=ts,go,java,dart,lua,html,css"/>
+  <img src="https://skills.syvixor.com/api/icons?i=ts,go,java,lua,html,css3"/>
 </p>
 <p>
-  <img src="https://skillicons.dev/icons?i=angular,react,svelte,astro,spring,flutter,redux,reactivex,tailwind,sass"/>
+  <img src="https://skills.syvixor.com/api/icons?i=react,nextjs,payload,svelte,astro,angular,spring,tailwind,sass,postcss,gsap"/>
 </p>
 <p>
-  <img src="https://skillicons.dev/icons?i=jest,cypress&theme=light"/>
+  <img src="https://skills.syvixor.com/api/icons?i=zustand,tanstack,rxjs,auth0,shadcnui,skeletonui,antdesign,materialdesign,chartjs,mui"/>
 </p>
 <p>
-  <img src="https://skillicons.dev/icons?i=nodejs,express,nginx,vite,rollupjs"/>
+  <img src="https://skills.syvixor.com/api/icons?i=npm,yarn,eslint,prettier"/>
 </p>
 <p>
-  <img src="https://skillicons.dev/icons?i=firebase,supabase,mongodb,mysql"/>
+  <img src="https://skills.syvixor.com/api/icons?i=jest,playwright,cypress,cucumber"/>
 </p>
 <p>
-  <img src="https://skillicons.dev/icons?i=git,github,githubactions,gitlab,azure,gcp,cloudflare,docker,kubernetes,netlify,ansible,linux,apple,raspberrypi"/>
+  <img src="https://skills.syvixor.com/api/icons?i=nodejs,express,nginx,vite,rollupjs"/>
 </p>
 <p>
-  <img src="https://skillicons.dev/icons?i=idea,neovim,arduino,obsidian,postman,figma,ps,ai,xd"/>
+  <img src="https://skills.syvixor.com/api/icons?i=firebase,supabase,mysql,mongodb"/>
+</p>
+<p>
+  <img src="https://skills.syvixor.com/api/icons?i=rest,socketio,openapi"/>
+</p>
+<p>
+  <img src="https://skills.syvixor.com/api/icons?i=git,github,githubactions,gitlab,azure,cloudflare,netlify"/>
+</p>
+<p>
+  <img src="https://skills.syvixor.com/api/icons?i=docker,k3s,kubernetes,argocd,ansible,loki,traefik"/>
+</p>
+<p>
+  <img src="https://skills.syvixor.com/api/icons?i=apple,linux,parrotos,vmware,virtualbox,ngrok"/>
+</p>
+<p>
+  <img src="https://skills.syvixor.com/api/icons?i=intellijidea,goland,vscode,neovim,alacritty,postman,thunderclient,storybook,sketch,figma,ps,ai,xd"/>
+</p>
+<p>
+  <img src="https://skills.syvixor.com/api/icons?i=jira,confluence,outlook,brave,chromium,obsidian,githubcopilot,n8n,chatgpt,ollama"/>
 </p>
