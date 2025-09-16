@@ -25,11 +25,11 @@
   <a href="https://svelte.dev/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=svelte" alt="Svelte" title="Svelte" /></a>
   <a href="https://astro.build/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=astro" alt="Astro" title="Astro" /></a>
   <a href="https://angular.io/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=angular" alt="Angular" title="Angular" /></a>
-  <a href="https://spring.io/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=spring" alt="Spring" title="Spring" /></a>
   <a href="https://tailwindcss.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=tailwind" alt="Tailwind CSS" title="Tailwind CSS" /></a>
   <a href="https://sass-lang.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=sass" alt="Sass" title="Sass" /></a>
   <a href="https://postcss.org/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=postcss" alt="PostCSS" title="PostCSS" /></a>
   <a href="https://gsap.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=gsap" alt="GSAP" title="GSAP" /></a>
+  <a href="https://spring.io/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=spring" alt="Spring" title="Spring" /></a>
 </p>
 <p>
   <a href="https://zustand-demo.pmnd.rs/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=zustand" alt="Zustand" title="Zustand" /></a>
