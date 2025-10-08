@@ -36,6 +36,7 @@
   <a href="https://zustand-demo.pmnd.rs/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=zustand" alt="Zustand" title="Zustand: Fast and small state management for React apps." /></a>
   <a href="https://tanstack.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=tanstack" alt="TanStack" title="TanStack: Powerful data fetching and table utilities for React." /></a>
   <a href="https://rxjs.dev/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=rxjs" alt="RxJS" title="RxJS: Reactive programming library for asynchronous data streams." /></a>
+  <a href="https://redux.js.org/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=redux" alt="Redux" title="Redux: Predictable state container for JavaScript apps." /></a>
   <a href="https://auth0.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=auth0" alt="Auth0" title="Auth0: Authentication and authorization as a service." /></a>
   <a href="https://ui.shadcn.com/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=shadcnui" alt="shadcn/ui" title="shadcn/ui: Accessible and customizable React UI components." /></a>
   <a href="https://www.skeleton.dev/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=skeletonui" alt="Skeleton UI" title="Skeleton UI: UI toolkit for Svelte and web apps." /></a>
@@ -50,10 +51,10 @@
   <a href="https://prettier.io/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=prettier" alt="Prettier" title="Prettier: Opinionated code formatter for consistent style." /></a>
 </p>
 <p>
+  <a href="https://vitest.dev/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=vitest" alt="Vitest" title="Vitest: Fast unit testing framework powered by Vite." /></a>
   <a href="https://jestjs.io/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=jest" alt="Jest" title="Jest: Delightful JavaScript testing framework." /></a>
   <a href="https://playwright.dev/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=playwright" alt="Playwright" title="Playwright: End-to-end browser testing for web apps." /></a>
   <a href="https://www.cypress.io/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=cypress" alt="Cypress" title="Cypress: Fast, easy, and reliable testing for anything that runs in a browser." /></a>
-  <a href="https://cucumber.io/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=cucumber" alt="Cucumber" title="Cucumber: Tool for running automated tests written in plain language." /></a>
 </p>
 <p>
   <a href="https://nodejs.org/" target="_blank"><img src="https://skills.syvixor.com/api/icons?i=nodejs" alt="Node.js" title="Node.js: JavaScript runtime for building scalable network applications." /></a>
