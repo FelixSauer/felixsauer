@@ -2,7 +2,7 @@
 
 ### 🧑‍💻 About Me
 
-- I'm a Senior Dev from Stuttgart, with a love for automation, architecture, clean code, and the kind of systems that don't break on Fridays.
+- I'm a Dev from Stuttgart, with a love for automation, architecture, clean code, and the kind of systems that don't break on Fridays.
 - For the past 10+ years, I've been building portals and e‑commerce platforms with a focus on frontend development.
 - Most of my work has revolved around automotive, retail, and connected industries, helping brands go digital with confidence.
 - I collaborate in German and English, write in TypeScript, speak YAML fluently, and dream in Git branches.
